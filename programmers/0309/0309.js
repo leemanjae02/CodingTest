@@ -3,11 +3,11 @@ let completion = ["lee", "kim"];
 
 function solution(participant, completion) {
   var answer = "";
-  let p = participant.sort();
-  let c = completion.sort();
+  participant.sort();
+  completion.sort();
   for (let i = 0; i < participant.length; i++) {
-    if (p[i] !== c[i]) {
-      answer = p[i];
+    if (participant[i] !== completion[i]) {
+      answer = participant[i];
       break;
     }
   }
