@@ -7,7 +7,8 @@ function solution(participant, completion) {
   let c = completion.sort();
   for (let i = 0; i < participant.length; i++) {
     if (p[i] !== c[i]) {
-      return c[i];
+      answer = p[i];
+      break;
     }
   }
   return answer;
